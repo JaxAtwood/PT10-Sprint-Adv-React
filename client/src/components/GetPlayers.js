@@ -33,13 +33,16 @@ componentDidMount() {
     })
 }
 
+componentWillUnmount() {
+}
+
     render() {
         return (
-            <div>
+            <div className="Players">
              {this.state.player.map((item, index) => {
                 return (
                     <div key={index}>
-                        <div>
+                        <div className="Player">
                             <p>{item.name}</p>
                             <p>{item.country}</p>
                             <p>{item.searches}</p>
